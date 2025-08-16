@@ -23,7 +23,7 @@ const findProduct = (order, productList) => {
 const findEmployee = (order, employeeList) => {
     let orderEmployee = null
 
-    for (const employee in employeeList) {
+    for (const employee of employeeList) {
         if (employee.id === order.employeeId) {
             orderEmployee = employee.name
         }
