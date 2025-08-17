@@ -1,17 +1,31 @@
-#details {
+.details {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-#detail--column {
+.detail--column {
     flex-basis: 24%;
     margin: 0 2rem;
     padding: 1rem;
     border: 1px dotted goldenrod;
 }
 
-#orders {
-    font-size: 20rem;
+.orders {
+    display: flex;
+    flex-direction: column;   /* Stack h2 above the list */
+    width: 100%;
 }
 
+.orders h2 {
+    text-align: center;         /* Align h2 to the left */
+    font-size: 2rem;          /* Correct font size syntax */ 
+    width: 70%;   /* Optional: give it a little left padding */
+}
+
+.order--detail {
+    display: flex;            /* Make it a flex container */
+    justify-content: center;  /* Center the list horizontally */
+    align-items: center;      /* Center vertically if needed */
+    margin-top: 1rem;
+}

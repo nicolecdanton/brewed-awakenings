@@ -19,7 +19,9 @@ const applicationHTML = `
 
 <article class="orders">
     <h2>Orders</h2>
+    <div class="order--detail">
     ${Orders()}
+    </div>
 </article>
 `
 
